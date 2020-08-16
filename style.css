@@ -13,7 +13,7 @@ header{
 /*------------------- product details -------------------------- */
 
 .cart{
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	background-color: #F6F5FA;;
 	padding: 60px 0;
 }
@@ -140,4 +140,45 @@ header{
 	background-color: #F6F5FA;;
 	padding: 60px 0;
 	margin: 100px auto 100px auto;
+}
+
+/* ---------    footer Area ------------ */
+
+.footer{
+    width: 100%;
+    padding: 20px;
+   margin: 0 auto 10px  auto;
+   border:1px solid gray;
+   border-radius: 3px;
+    background-color: rgb(179, 179, 179);
+}
+.social_img a img{
+    width: 40px;
+    height: 40px;
+    margin: 10px 7px;
+	display: inline-block;
+	
+}
+.social_img a img:hover{
+    transition: ease-in-out .2s;
+    box-shadow: 1px 1px 7px 7px #383535;
+	border-radius: 50%;
+}
+.footer_text{
+    margin-top: 6px;
+}
+.footer_text h5 span{
+    color: rgb(219, 29, 29);
+}
+.footer_text h6{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 992px){
+    .card{
+        margin-top: 15px;
+    }
+    .social_img a img{
+       margin: 5px 2px;
+}
 }
