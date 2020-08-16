@@ -1,0 +1,143 @@
+body{
+	font-family: 'Sriracha', cursive;
+	}
+
+header{
+	text-align: center;
+	background-color: rgb(156, 185, 223);
+	padding: 30px;
+	margin: 0;
+	border-bottom: 1px solid black;
+}
+
+/*------------------- product details -------------------------- */
+
+.cart{
+	margin-bottom: 100px;
+	background-color: #F6F5FA;;
+	padding: 60px 0;
+}
+.choose_product{
+	color: #a00714;
+	text-align: center;
+	margin-top:-45px;
+}
+.total-price{
+	padding-bottom: 15px;
+}
+.cart-item{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+.remove-item{
+	cursor: pointer;
+}
+.center-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cart-item img{
+	width: 115px;
+}
+.cart-item h5{
+    padding: 0 45px;
+}
+.cart-item .remove-item{
+	width: 25px!important;
+}
+.btn-default{
+	background-color: #fff;
+}
+.cart-item .form-control{
+	background-color: #F6F5FA;
+	border: none;
+    width: 65px;
+    border-radius: 10px!important;
+    font-weight: 700;
+    font-size: 20px;
+}
+.input-group{
+	width: unset;
+}
+.status{
+	text-align: right;
+}
+
+.check-out{
+	float: right;
+    padding: 10px 30px;
+	font-size: 19px;
+	color: black;
+	background-color: #2FBE70;
+	border: none;
+	
+
+}
+
+/* ------------login area css-------------- */
+
+#login_area{
+	display: none;
+}
+
+.card{
+	margin-top: 20px;
+}
+.card-header{
+	text-align: center;
+	background-color: rgb(24, 192, 235);
+}
+.form-control{
+	background-color: rgb(249, 249, 249);
+}
+.form-control:focus{
+	background-color: rgb(225, 238, 248);
+}
+.login_area_all_btn{
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.login_area_all_btn button{
+    padding: 10px 20px;
+	font-size: 19px;
+	color: black;
+	background-color: #2FBE70;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+#show_information{
+	display: none;
+}
+@media screen and (max-width: 992px){
+	.reload_check_out{
+		margin:  auto;
+	}
+	.check-out{
+		margin-top: 20px;
+	}
+	.login_area_all_btn{
+		margin: auto;
+	}
+	.login_area_all_btn button{
+		width: 48%;
+		margin-top:10px;
+	}
+} 
+
+.product_quantity .card-header{
+	margin-bottom: 40px;
+}
+
+#thanked_area{
+	display: none;
+	text-align: center;	
+	color: black;
+	background-color: #F6F5FA;;
+	padding: 60px 0;
+	margin: 100px auto 100px auto;
+}

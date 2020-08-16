@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet"/>
+   <link href="style.css" rel="stylesheet">
+   <title>Shopping Cart</title>
+   <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+   <!-- header Area-->
+   <header>
+      <h1 id="wel">Welcome TO Mahbub Store</h1>  
+   </header>
+   
+
+<!-- product details section -->
+   <section id="product_details">
+      <div class="container">
+         <div class="cart">
+            <h3 class="choose_product">Choose Your Product</h3>
+            <div class="col-md-12 col-lg-10 mx-auto">
+               <div id="cart_item1" class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item">
+                        <img src="images/product-1.png" alt="">
+                        <h5>iPhone 11 128GB Black</h5>
+                     </div>
+
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="phone_minus_btn" class="btn btn-default "><i class="fas fa-minus"></i></button>
+                           <input id="phone_input_value" type="number" min="1"  class="form-control text-center" value="1">
+                           <button id="phone_plus_btn" class="btn btn-default "><i class="fas fa-plus"></i></button>
+                        </div>
+                        <h5>$<span id="phone_default_price">1219</span></h5>
+                        <img id="removed_phone" src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div id="cart_item2" class="cart-item">
+                  <div class="row">
+                     <div class="col-md-7 center-item mx-auto">
+                        <img src="images/product-2.png" alt="">
+                        <h5>iPhone 11 Silicone Case - Black</h5>
+                     </div>
+                     <div class="col-md-5 center-item">
+                        <div class="input-group number-spinner">
+                           <button id="case_minus_btn" class="btn btn-default "><i class="fas fa-minus"></i></button>
+                           <input id="case_input_value" type="number" min="1" class="form-control text-center" value="1">
+                           <button id="case_plus_btn" class="btn btn-default "><i class="fas fa-plus"></i></button>
+
+                        </div>
+                        <h5>$<span id="case_default_price">59</span></h5>
+                        <img id="removed_case" src="images/remove.png" alt="" class="remove-item">
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cart-item">
+                  <div class="row">
+
+                     <div class="col-md-8">
+                        <h5>Subtotal: </h5>
+                        <h5>Tax(5%):</h5>
+                        <h5>Total:</h5>
+                     </div>
+
+                     <div class="col-md-4 status">
+                        <h5>$ <span id="subtotal">1,278</span></h5>
+                        <h5>$ <span id="tax">63.9</span></h5>
+                        <h5>$ <span id="total">1341.9</span></h5>
+                     </div>
+                  </div>
+               </div>
+               <div class="row d-flex justify-content-between col-md-12 pt-4 pb-4 reload_check_out">
+                  <button id="reload" type="button" class="col-sm-12 col-lg-3 btn btn-success check-out"><i class="fa fa-retweet" aria-hidden="true"></i> Reload</button>
+                  <button id="check_out" type="button" class="col-sm-12 col-lg-3 btn btn-success check-out"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Check Out</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+      <!-- login area -->
+
+      <section id="login_area" class="container">
+            <div class="card border-dark mb-3">
+               <div class="card-header">
+                  <h3>Please Registration For Shipping</h3>
+               </div>
+
+               <div class="card-body text-dark">
+                  <form action="#">
+
+                     <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input id="name_input" type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+                     </div>
+
+                     <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        </div>
+                        <input id="email_input" type="email" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                           <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        </div>
+                        <input id="phone_input" type="number" class="form-control" placeholder="Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+                     </div>
+
+                     <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text" id="basic-addon1"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        </div>
+                        <input id="address_input" type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1">
+                     </div>
+
+                     <div class="row d-flex justify-content-between login_area_all_btn">
+                        <button id="goto_btn" type="button" class="btn btn-success col-sm-3 col-md4 col-lg-3"><i class="fa fa-backward" aria-hidden="true"></i> Go To Cart</button>
+                        <button  type="reset" class="btn btn-success col-sm-3 col-md4 col-lg-3"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>
+                        <button id="submit_btn" type="submit" class="btn btn-success col-sm-3 col-md4 col-lg-3"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+                     </div>
+
+                  </form>
+               </div>
+             </div>
+      </section>
+   
+   <!-- show information -->
+   
+   <section id="show_information" class="container ">
+      <div class="card border-dark mb-3">
+         <div class="card-header">
+            <h3>Please Cheek Your Identity</h3>
+         </div>
+         <div class="card-body text-dark">
+           <h4 class="card-title">Name: <span id="show_name_me"></span></h4>
+           <hr>
+           <h4 class="card-title">E-mail: <span id="show_email"></span></h4>
+           <hr>
+           <h4 class="card-title">Phone: <span id="show_phone"></span></h4>
+           <hr>
+           <h4 class="card-title">Address: <span id="show_address"></span></h4>
+           <hr>
+           <div class="product_quantity">
+            <div class="card-header">
+               <h3>Product Info</h3>
+            </div>
+               <h4>Phone Quantity: <span id="phone_quantity_confirm"></span></h4>
+               <hr>
+               <h4>Phone Price: $<span id="phone_price_confirm"></span></h4>
+               <hr>
+               <h4>Case Quantity: <span id="case_quantity_confirm"></span></h4>
+               <hr>
+               <h4>Case Price: $<span id="case_price_confirm"></span></h4>
+               <hr>
+               <h4>Subtotal: $<span id="subtotal_confirm"></span></h4>
+               <hr>
+               <h4>Tax (5%): $<span id="tax_confirm"></span></h4>
+               <hr>
+               <h4>Total: $<span id="total_confirm"></span></h4>
+               <hr>
+           </div>
+           <div class="login_area_all_btn">
+            <button id="edit_btn" class="btn btn-success"><i class="fa fa-pencil-alt" aria-hidden="true"></i> Edit Info</button>
+            <button id="confirm_btn" class="btn btn-success"><i class="fa fa-check-circle" aria-hidden="true"></i> Confirm</button>
+           </div>
+            
+         </div>
+       </div>
+   </section>
+
+
+     <section id="thanked_area" class="container">
+      <div>
+         <h3>Thanks For Shopping With Us. We Will Contact You Soon.</h3>
+         <button id="home_btn" class="btn btn-success">Home</button>
+      </div>
+     </section>
+
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="app.js"></script>
+</body>
+
+</html>
